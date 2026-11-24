@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('rewind',{navigate:s=>ipcRenderer.send('navigate',s),command:c=>ipcRenderer.send('command',c),onLocation:fn=>ipcRenderer.on('location',(_e,u)=>fn(u))});

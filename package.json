@@ -1,0 +1,36 @@
+{
+  "name": "rewind-browser",
+  "version": "0.1.0",
+  "description": "Retro browser shell",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "build": {
+    "appId": "org.rewind.browser",
+    "productName": "Rewind",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "ui.js",
+      "style.css",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

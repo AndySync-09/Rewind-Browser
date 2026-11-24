@@ -1,0 +1,1 @@
+# Security\n\nThis is an experimental browser shell, not a security-audited release. Report vulnerabilities privately via GitHub private vulnerability reporting if enabled. Do not post secrets in issues. Keep Electron updated. Permissions and popups are denied in this prototype; authentication flows may fail. No certificate bypass is intended.\n

@@ -1,0 +1,1 @@
+const address=document.querySelector('#address');document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();window.rewind.navigate(address.value)});document.querySelectorAll('[data-c]').forEach(b=>b.addEventListener('click',()=>window.rewind.command(b.dataset.c)));window.rewind.onLocation(u=>{address.value=u});
