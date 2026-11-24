@@ -1,7 +1,7 @@
 name: Experimental builds
 on:
   push:
-    branches: [foundation, main]
+    branches: [foundation, main, total-recall]
   pull_request:
 jobs:
   build:
@@ -28,4 +28,5 @@ jobs:
             dist/*.exe
             dist/*.dmg
             dist/*.AppImage
+            dist/*.deb
           if-no-files-found: error

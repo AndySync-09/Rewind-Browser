@@ -1,1 +1,1 @@
-const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('rewind',{navigate:s=>ipcRenderer.send('navigate',s),command:c=>ipcRenderer.send('command',c),onLocation:fn=>ipcRenderer.on('location',(_e,u)=>fn(u))});
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('rewind',{navigate:s=>ipcRenderer.send('navigate',s),command:(c,a)=>ipcRenderer.send('command',c,a),onState:f=>ipcRenderer.on('state',(_e,s)=>f(s)),onDownload:f=>ipcRenderer.on('download',(_e,s)=>f(s))});
