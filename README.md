@@ -23,6 +23,12 @@ The initial implementation lives on the [foundation branch](https://github.com/A
 
 Build artifacts, if successful, are available through [GitHub Actions](https://github.com/AndySync-09/Rewind-Browser/actions). Experimental artifacts are unsigned and not production releases.
 
+## Download and install
+
+[Windows EXE · macOS DMG · Linux AppImage — installation guide](INSTALL.md)
+
+Build #8 passed on all three platforms. These are unsigned experimental artifacts, not a stable release.
+
 ## Run locally
 
 Requires Node.js and npm.
